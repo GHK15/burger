@@ -1,21 +1,29 @@
+<div class="topbar">
 <h1>BURGER CONSUMPTION PLANNER</h1>
+<p>...for the most dedicated burger lovers<p>
+</div>
 
-<div class="eatfuture">
+<br><br><br>
 
+<div class="allburgers">
+
+<div class="later-list">
 <h2>Burgers To Eat</h2>
-
+<br>
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devour=true}}
     {{/unless}}
   {{/each}}
-</ul>
-
+{{!-- </ul> --}}
 </div>
 
-<h2>Devoured Burgers</h2>
+<div class="emp"></div>
 
+<div class="devoured-list">
+<h2>Devoured Burgers</h2>
+<br>
 <ul>
   {{#each burgers}}
     {{#if devoured}}
@@ -23,7 +31,13 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
 
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="addform">
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -31,12 +45,13 @@
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="burger_name">
   </div>
-
+<br>
   <div class="form-group">
     <label for="slee">When do you want to eat it?</label><br>
     <input type="radio" name="devoured" value="1" checked> Now<br>
     <input type="radio" name="devoured" value="0"> Later
   </div>
-
+<br>
   <button type="submit">Submit</button>
 </form>
+</div>

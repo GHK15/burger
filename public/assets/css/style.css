@@ -1,3 +1,16 @@
+/* body { 
+  background-image: url("background.jpg");
+} */
+
+html { 
+  background: url("background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -18,6 +31,55 @@ li {
   margin-bottom: 5px;
 }
 
-.eatfuture {
-  width: 50%;
+.allburgers {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+}
+
+.later-list {
+  /* flex: 0 0 65%; */
+  flex: 1;
+  background: Moccasin;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.emp {
+  /* flex: 0 0 65%; */
+  flex: 0 0 8%;
+  /* background: white; */
+  padding: 20px;
+  background-color: transparent;
+}
+
+.devoured-list {
+  flex: 1;
+  background: LightYellow; 
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.topbar {
+  /* background: cornflowerblue; */
+  background: yellowgreen;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.addform {
+  background: gold;
+  padding: 20px;
+  border-radius: 25px;
+  width: 20%;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button-space {
+  width: 5px;
 }
